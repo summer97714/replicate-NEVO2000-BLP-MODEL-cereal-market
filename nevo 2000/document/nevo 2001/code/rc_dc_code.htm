@@ -1,0 +1,81 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head>
+   
+  <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+
+   
+  <meta name="Generator" content="Corel WordPerfect 8">
+
+   
+  <meta name="GENERATOR" content="Mozilla/4.03 [en] (WinNT; I) [Netscape]"></head><body>
+
+<div align="left"><big>
+<font face="Helvetica, Arial, sans-serif"><b><big>Computer Code for Problem Set 3 (Effects of Horizontal Merger)</big><br>
+</b></font>
+</big></div>
+
+
+
+
+<font face="Helvetica, Arial, sans-serif"><br>
+Listed below is a Matlab script file and eight accompanying Matlab
+functions that compute the random coefficients discrete choice model
+described in two articles by Aviv Nevo: <br>
+<br>
+<small>"A Practitioner's Guide to Estimation of Random
+Coefficients Logit Models of Demand," <i>Journal of Economics &amp; Management
+Strategy</i> 9(4): 513-548, 2000.<br>
+"Measuring Market Power in the
+Ready-to-Eat Cereal Industry," <i>Econometrica</i> 69(2): 307-342, 2001.<br>
+<br>
+</small>The code has been provided for academic research by Aviv Nevo
+(and modified by Bronwyn Hall to run in Matlab 7). Users of this code
+(or a
+modified version of it) should reference the above papers. The code was
+successfully run using Matlab 7.0.4 on a Windows XP operating
+system. Questions regarding Matlab should be referred to <a href="http://www.mathworks.com/">MathWorks</a>.
+
+<br>
+<br>
+The data used by this program is described in the file <a href="http://emlab.berkeley.edu/users/bhhall/e220c/readme.html">readme.html.</a>
+These data were motivated by real scanner data; however, they are not real
+and should not be used to make any inference. The only purpose these data
+serve is to provide an example of the inputs required by the program. The
+results Nevo obtained with the code can be found in <a href="http://emlab.berkeley.edu/users/bhhall/e220c/results.txt">results.txt</a>.
+
+<br>
+<br>
+The program consists of the following files (all Matlab m-files):
+<br>
+<a href="http://emlab.berkeley.edu/users/bhhall/e220c/rc_dc.m">rc_dc.m</a> - A script file that reads in the data
+and calls the other functions;
+<br>
+<a href="http://emlab.berkeley.edu/users/bhhall/e220c/gmmobjg.m">gmmobjg.m</a> - This function computes the GMM objective
+function and its gradient;
+<br>
+<a href="http://emlab.berkeley.edu/users/bhhall/e220c/meanval.m">meanval.m</a> - This function computes the mean
+utility level;
+<br>
+<a href="http://emlab.berkeley.edu/users/bhhall/e220c/mufunc.m">mufunc.m</a> - This function computes the non-linear
+part of the utility (mu_ijt in the Guide);
+<br>
+<a href="http://emlab.berkeley.edu/users/bhhall/e220c/mktsh.m">mktsh.m</a> - This function computes the market share
+for each product;
+<br>
+<a href="http://emlab.berkeley.edu/users/bhhall/e220c/ind_sh.m">ind_sh.m</a> - This function computes the "individual"
+probabilities of choosing each brand;
+<br>
+<a href="http://emlab.berkeley.edu/users/bhhall/e220c/gradobj.m"></a><a href="http://emlab.berkeley.edu/users/bhhall/e220c/jacob.m">jacob.m</a> - This function computes the Jacobian
+of the implicit function that defines the mean utility;
+<br>
+<a href="http://emlab.berkeley.edu/users/bhhall/e220c/var_cov.m">var_cov.m</a> - This function computes the VCov
+matrix of the estimates.
+<br>
+<a href="http://emlab.berkeley.edu/users/bhhall/e220c/cr_dum.m">cd_dum.m</a> - This function creates a set of
+dummy variables
+
+</font>
+<p>
+</p>
+<br>
+</body></html>
